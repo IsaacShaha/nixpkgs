@@ -6,6 +6,9 @@
 let
   awscurl = buildPythonApplication {
     pname = "awscurl";
+    # The latest stable version of awscurl (0.29) requires urllib3[secure],
+    # which is deprecated and requires a package that is not in nixpkgs
+    # (urllib3-secure-extra).
     version = "unstable-2023-07-10";
     format = "setuptools";
 
