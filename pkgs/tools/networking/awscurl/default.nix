@@ -4,7 +4,7 @@
 , python3
 }: with python3.pkgs;
 let
-  awscurl = buildPythonApplication rec {
+  awscurl = buildPythonApplication {
     pname = "awscurl";
     version = "0.29";
     format = "setuptools";
