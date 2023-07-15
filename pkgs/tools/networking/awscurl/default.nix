@@ -6,7 +6,7 @@
 let
   awscurl = buildPythonApplication {
     pname = "awscurl";
-    version = "0.29";
+    version = "unstable-2023-07-10";
     format = "setuptools";
 
     src = fetchFromGitHub {
