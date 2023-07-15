@@ -15,7 +15,7 @@ let
     src = fetchFromGitHub {
       owner = "okigan";
       repo = "awscurl";
-      rev = "e47119b";
+      rev = "e47119b384edb33ca734f8b930e8ffde33882f3e";
       hash = "sha256-NVGPB29kgLYpJnAiSUYoC9M11G9J1shbe1ZXbywRyUU=";
     };
 
