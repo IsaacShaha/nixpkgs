@@ -41,11 +41,11 @@ let
       urllib3
     ];
 
-    meta = {
+    meta = with lib; {
       description = "curl-like tool with AWS Signature Version 4 request signing.";
       homepage = "https://github.com/okigan/awscurl";
-      license = lib.licenses.mit;
-      maintainers = with maintainers; [ isaacshaha ];
+      license = licenses.mit;
+      maintainers = [ maintainers.isaacshaha ];
     };
   };
 in
